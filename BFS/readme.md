@@ -1,6 +1,6 @@
 # BFS - 너비 우선 탐색
 
-* 너비 우선 탐색은 맹목적 탐색방법(blind search)[^1]의 하나이다. 
+* 너비 우선 탐색은 맹목적 탐색방법(blind search)<sup id="a1">[1](#bfs1)</sup>의 하나이다. 
 * 시작 정점을 방문한 후 **시작 정점에 인접한 모든 정점들을 우선 방문하는 방법**이다.
 * 더 이상 **방문하지 않은 정점이 없을 때가지 방문하지 않은 모든 정점들에 대해서도 너비 우선 검색을 적용**한다. 
 
@@ -26,8 +26,7 @@
 
 
 ## 각주
-
-[^1]: 1 [상태공간(state space)에 대한 정리](https://github.com/LeeA0/AlgorithmNote/wiki/%EC%83%81%ED%83%9C-%EA%B3%B5%EA%B0%84%EA%B3%BC-%ED%83%90%EC%83%89) ↩
+<b id="bfs"><sup>1</sup></b>상태공간(state space)에 대한 정리](https://github.com/LeeA0/AlgorithmNote/wiki/%EC%83%81%ED%83%9C-%EA%B3%B5%EA%B0%84%EA%B3%BC-%ED%83%90%EC%83%89)[↩](#bfs1)<br>
 
 
 
