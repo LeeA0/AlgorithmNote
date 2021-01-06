@@ -26,7 +26,8 @@
 
 
 ## 각주
-<b id="bfs"><sup>1</sup></b>상태공간(state space)에 대한 정리](https://github.com/LeeA0/AlgorithmNote/wiki/%EC%83%81%ED%83%9C-%EA%B3%B5%EA%B0%84%EA%B3%BC-%ED%83%90%EC%83%89)[↩](#bfs1)<br>
+<b id="bfs"><sup>1</sup></b>
+[상태공간(state space)에 대한 정리](https://github.com/LeeA0/AlgorithmNote/wiki/%EC%83%81%ED%83%9C-%EA%B3%B5%EA%B0%84%EA%B3%BC-%ED%83%90%EC%83%89)[↩](#bfs1)
 
 
 
