@@ -49,8 +49,7 @@ for(int i=0; i<a.length; i++){
 - 전체 연산 횟수 N + (N-1) + (N-2) + ... + 2  
 - 이중 반복문 사용
 
-![image-20210207220500825](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20210207220500825.png)
-
+*O(N^2)*
 
 - 데이터의 개수가 10,000개 이상이면 정렬 속도가 급격히 느려짐
 
@@ -95,8 +94,7 @@ for(int i=0; i<a.length; i++){
 
 - 선택정렬과 시간 복잡도는 같다
 
-![image-20210207220541387](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20210207220541387.png)
-
+*O(N^2)*
 
 - **BUT) ** 실제로 수행했을 때 선택 정렬보다 느리게 작동
 
@@ -123,8 +121,7 @@ for(int i=0; i<a.length; i++){
 ---
 
 - 선택정렬과 버블정렬과 마찬가지로 시간 복잡도는 같다
-
-![image-20210207220528307](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20210207220528307.png)
+*O(N^2)*
 
 - 선택정렬과 삽입정렬은 무조건 위치를 바꿈, 그리고 이미 정렬이 이루어져 있어도 반복을 수행하게 됨
 
