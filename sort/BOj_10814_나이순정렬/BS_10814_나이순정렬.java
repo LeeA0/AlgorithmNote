@@ -8,8 +8,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class BOJ_10814_³ªÀÌ¼øÁ¤·Ä {
-	// Comparable Interface¸¦ overridingÇØ¼­ »ç¿ëÇÑ´Ù
+public class BOJ_10814_ë‚˜ì´ìˆœì •ë ¬ {
+	// Comparable Interfaceë¥¼ ìƒì†ë°›ì•„ì„œ compareTo ë©”ì„œë“œë¥¼ overriding í•œë‹¤.
 	static class Person implements Comparable<Person>{
 		int age;
 		String name;
@@ -19,12 +19,12 @@ public class BOJ_10814_³ªÀÌ¼øÁ¤·Ä {
 		}
 		@Override
 		public int compareTo(Person p) {
-			// °ªÀÌ ´Ù¸¦¶§, ¾ç¼ö°ªÀ» ¹İÈ¯ÇÏ¸é ºñ±³ÇÏ´Â µÎ °´Ã¼ÀÇ ÀÚ¸®°¡ µµÄ¡µÈ´Ù.
+			// ê°’ì´ ë‹¤ë¥¼ë•Œ, ì–‘ìˆ˜ê°’ì„ ë°˜í™˜í•˜ë©´ ë¹„êµí•˜ëŠ” ë‘ ê°ì²´ì˜ ìë¦¬ê°€ ë„ì¹˜ëœë‹¤.
 			if(this.age != p.age) {
 				return this.age - p.age;
 			}
-//			¹®Á¦¿Í´Â »ó°ü¾øÁö¸¸, ³ªÀÌ°¡ °°À» ¶§ ÀÌ¸§ "¿À¸§Â÷¼øÀ¸·Î" Á¤·ÄÇÏ°íÀÚ ÇÏ¸é ´ÙÀ½°ú °°ÀÌ ±â¼úÇÑ´Ù.
-//			³»¸²Â÷¼øÀÌ¶ó¸é  p.name.compareTo(this.name)
+//			ë¬¸ì œì™€ëŠ” ìƒê´€ì—†ì§€ë§Œ, ë‚˜ì´ê°€ ê°™ì„ ë•Œ ì´ë¦„ "ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ" ì •ë ¬í•˜ê³ ì í•˜ë©´ ë‹¤ìŒê³¼ ê°™ì´ ê¸°ìˆ í•œë‹¤.
+//			ë‚´ë¦¼ì°¨ìˆœì´ë¼ë©´  p.name.compareTo(this.name)
 //			else if(this.age == p.age) {
 //				return this.name.compareTo(p.name);
 //			}
@@ -39,7 +39,7 @@ public class BOJ_10814_³ªÀÌ¼øÁ¤·Ä {
 			StringTokenizer st = new StringTokenizer(br.readLine());
 			personList.add(new Person(Integer.parseInt(st.nextToken()), st.nextToken()));
 		}
-		// È¤½Ã Á¤·ÄÇÏ°íÀÚ ÇÏ´Â ¹­À½ÀÌ ¹è¿­ÀÌ¶ó¸é Arrays.sort¸¦ »ç¿ëÇÑ´Ù.
+		// í˜¹ì‹œ ì •ë ¬í•˜ê³ ì í•˜ëŠ” ë¬¶ìŒì´ ë°°ì—´ì´ë¼ë©´ Arrays.sortë¥¼ ì‚¬ìš©í•œë‹¤.
 		Collections.sort(personList);
 		for (int i = 0; i < personList.size(); ++i) {
 			System.out.println(personList.get(i).age + " " + personList.get(i).name);
