@@ -64,10 +64,10 @@ public class BOJ_7576_토마토 {
 				for (int d = 0; d < 4; d++) {
 					int nr = curr[0] + dr[d];
 					int nc = curr[1] + dc[d];
-					if (nr >= 0 && nr < N && nc >= 0 && nc < M && map[nr][nc] != -1 && visited[nr][nc] == 0) {
+					if (nr >= 0 && nr < N && nc >= 0 && nc < M && map[nr][nc] != -1 && visited[nr][nc] == 0 && map[nr][nc] == 0) {
 						visited[nr][nc] = 1;
-						countTomato++;
 						que.offer(new int[] { nr, nc });
+						countTomato++;
 					}
 				}
 			}
